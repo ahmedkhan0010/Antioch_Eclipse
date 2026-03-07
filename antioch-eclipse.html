@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antioch Eclipse Cricket Club</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="antioch-eclipse.css" />
+  </head>
+  <body>
+    <canvas id="stars-canvas"></canvas>
+
+    <!-- NAV -->
+    <nav>
+      <a href="#hero" class="nav-logo">
+        <div class="nav-logo-icon">
+          <img src="images/Logo.jpeg" alt="Antioch Eclipse Logo" />
+        </div>
+        <div class="nav-logo-text">
+          <span>Antioch</span>
+          <span>Eclipse</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#squad">Squad</a></li>
+        <li><a href="#matches">Matches</a></li>
+        <li><a href="#kit">Kit</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobile-menu">
+      <button class="mobile-close" id="mobile-close">✕</button>
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#squad" class="mobile-nav-link">Squad</a>
+      <a href="#matches" class="mobile-nav-link">Matches</a>
+      <a href="#kit" class="mobile-nav-link">Kit</a>
+    </div>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-bg-circle"></div>
+      <div class="hero-bg-ring"></div>
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <div class="hero-eyebrow-line"></div>
+          <span>Antioch Cricket Club · Est. 2024</span>
+        </div>
+        <h1 class="hero-title">
+          RISE<br />
+          <span class="accent">ECLIPSE</span><br />
+          CONQUER
+        </h1>
+        <p class="hero-subtitle">
+          Where raw cricket passion meets elite ambition. The Antioch Eclipse —
+          forged in darkness, blazing on the pitch.
+        </p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num" data-count="13">0</span>
+            <span class="stat-label">Players</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num" data-count="5">0</span>
+            <span class="stat-label">Matches Scheduled</span>
+          </div>
+        </div>
+        <div class="hero-ctas">
+          <a href="#squad" class="btn-primary">Meet the Squad</a>
+          <a href="#matches" class="btn-secondary">View Fixtures</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <div class="section-header">
+            <p class="section-tag">Our Story</p>
+            <h2 class="section-title">
+              Born in the <span class="accent">Shadow</span>
+            </h2>
+          </div>
+          <p>
+            The <strong>Antioch Eclipse</strong> is more than a cricket team —
+            it's a movement. Founded with a vision to bring championship-calibre
+            cricket to Antioch, we've built a family of dedicated athletes who
+            play hard, train harder, and never stop competing.
+          </p>
+          <p>
+            Our mint-and-black colours stand for precision and power. Every time
+            the Eclipse takes the field, we bring
+            <strong>intensity, unity, and skill</strong> that sets us apart from
+            every opponent.
+          </p>
+          <p>
+            Whether it's a fierce T20 or a tense limited-overs match,
+            <strong>the Eclipse always shows up</strong>. Join us on this
+            journey from underdogs to champions.
+          </p>
+        </div>
+        <div class="about-logo-showcase reveal">
+          <div class="logo-glow-wrap">
+            <img src="images/Logo.jpeg" alt="Antioch Eclipse Logo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features">
+      <div class="section-header reveal">
+        <p class="section-tag">What We Stand For</p>
+        <h2 class="section-title">
+          Eclipse <span class="accent">Values</span>
+        </h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <span class="feature-icon">⚡</span>
+          <div class="feature-title">Elite Performance</div>
+          <p class="feature-desc">
+            We train with intensity and compete with excellence. Every session
+            is designed to sharpen skills, build stamina, and raise the
+            collective ceiling.
+          </p>
+        </div>
+        <div class="feature-card reveal">
+          <span class="feature-icon">🌙</span>
+          <div class="feature-title">Darkness & Drive</div>
+          <p class="feature-desc">
+            Like an eclipse, we transform the field — blocking out the ordinary
+            and revealing something extraordinary. Adversity fuels our hunger.
+          </p>
+        </div>
+        <div class="feature-card reveal">
+          <span class="feature-icon">🤝</span>
+          <div class="feature-title">Team Brotherhood</div>
+          <p class="feature-desc">
+            Cricket is a team sport at heart. The Eclipse is built on trust,
+            respect, and a shared commitment to lifting each other up on and off
+            the pitch.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SQUAD -->
+    <section id="squad">
+      <div class="section-header reveal">
+        <p class="section-tag">The Eclipse XI</p>
+        <h2 class="section-title">
+          Meet the <span class="accent">Squad</span>
+        </h2>
+      </div>
+      <div class="squad-grid" id="squad-grid">
+        <!-- Cards inserted by JS -->
+      </div>
+    </section>
+
+    <!-- MATCHES -->
+    <section id="matches">
+      <div class="section-header reveal">
+        <p class="section-tag">NPL Season 2026</p>
+        <h2 class="section-title">
+          Fixtures &amp; <span class="accent">Results</span>
+        </h2>
+      </div>
+      <div class="matches-list reveal">
+        <div class="match-row">
+          <div class="match-date">
+            <span class="match-date-day">28 </span
+            ><span class="match-date-month">Mar 2026</span>
+          </div>
+          <div class="match-info">
+            <div class="match-vs">
+              Eclipse vs <span>Nashville Tridents</span>
+            </div>
+            <div class="match-detail">12 Overs · Whites Creek High School</div>
+            <div class="match-score"></div>
+            <div class="match-result">
+              <span class="result-upcoming">Upcoming</span>
+            </div>
+          </div>
+        </div>
+        <div class="match-row">
+          <div class="match-date">
+            <span class="match-date-day">04 </span
+            ><span class="match-date-month">Apr 2026</span>
+          </div>
+          <div class="match-info">
+            <div class="match-vs">Eclipse vs <span>Geodis</span></div>
+            <div class="match-detail">12 Overs · Whites Creek High School</div>
+          </div>
+          <div class="match-score"></div>
+          <div class="match-result">
+            <span class="result-upcoming">Upcoming</span>
+          </div>
+        </div>
+        <div class="match-row">
+          <div class="match-date">
+            <span class="match-date-day">11 </span
+            ><span class="match-date-month">Apr 2026</span>
+          </div>
+          <div class="match-info">
+            <div class="match-vs">Eclipse vs <span>NCA</span></div>
+            <div class="match-detail">12 Overs · Whites Creek High School</div>
+          </div>
+          <div class="match-score"></div>
+          <div class="match-result">
+            <span class="result-upcoming">Upcoming</span>
+          </div>
+        </div>
+        <div class="match-row">
+          <div class="match-date">
+            <span class="match-date-day">18 </span
+            ><span class="match-date-month">Apr 2026</span>
+          </div>
+          <div class="match-info">
+            <div class="match-vs">Eclipse vs <span>Game Swingers</span></div>
+            <div class="match-detail">12 Overs · Whites Creek High School</div>
+          </div>
+          <div class="match-score"></div>
+          <div class="match-result">
+            <span class="result-upcoming">Upcoming</span>
+          </div>
+        </div>
+        <div class="match-row">
+          <div class="match-date">
+            <span class="match-date-day">2 </span
+            ><span class="match-date-month">May 2026</span>
+          </div>
+          <div class="match-info">
+            <div class="match-vs">Eclipse vs <span>DCC</span></div>
+            <div class="match-detail">12 Overs · Whites Creek High School</div>
+          </div>
+          <div class="match-score"></div>
+          <div class="match-result">
+            <span class="result-upcoming">Upcoming</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KIT -->
+    <section id="kit">
+      <div class="kit-layout">
+        <div class="kit-details reveal">
+          <div class="section-header">
+            <p class="section-tag">Official 2025 Kit</p>
+            <h2 class="section-title">
+              Wear the <span class="accent">Eclipse</span>
+            </h2>
+          </div>
+          <p
+            style="
+              color: var(--silver);
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 1.75;
+              margin-bottom: 8px;
+            "
+          >
+            Our official playing kit captures the essence of the Eclipse — a
+            stunning gradient fade from vibrant mint to deep charcoal, with
+            galaxy-speckle detailing that mirrors a celestial eclipse.
+          </p>
+          <div class="kit-features">
+            <div class="kit-feature">
+              <span class="kit-feature-icon">👕</span>
+              <div class="kit-feature-text">
+                <h4>Performance Jersey</h4>
+                <p>
+                  Mint-to-charcoal gradient polo with galaxy-speckle sublimation
+                  print and Eclipse badge on the chest.
+                </p>
+              </div>
+            </div>
+            <div class="kit-feature">
+              <span class="kit-feature-icon">👖</span>
+              <div class="kit-feature-text">
+                <h4>Match Trousers</h4>
+                <p>
+                  Dark charcoal tapered trousers with mint side stripe and
+                  Eclipse logo embroidered on the thigh.
+                </p>
+              </div>
+            </div>
+            <div class="kit-feature">
+              <span class="kit-feature-icon">🧢</span>
+              <div class="kit-feature-text">
+                <h4>Cap &amp; Bucket Hat</h4>
+                <p>
+                  Full mint structured cap and wide-brim bucket hat — both
+                  featuring the Eclipse emblem.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="kit-image reveal">
+          <img src="images/kit.jpeg" alt="Antioch Eclipse Official Kit" />
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-top">
+        <div class="footer-col footer-brand">
+          <a href="#hero" class="nav-logo" style="text-decoration: none">
+            <div class="nav-logo-icon">
+              <img src="images/Logo.jpeg" alt="Antioch Eclipse Logo" />
+            </div>
+            <div class="nav-logo-text">
+              <span>Antioch</span>
+              <span>Eclipse</span>
+            </div>
+          </a>
+          <p>Precision. Power. Eclipse. — Antioch Cricket Club, Nashville.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#squad">Squad</a></li>
+            <li><a href="#matches">Fixtures</a></li>
+            <li><a href="#kit">Kit</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="Instagram">📸</a>
+            <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+            <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+            <a href="#" class="social-icon" aria-label="YouTube">▶️</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Antioch Eclipse Cricket Club. All rights reserved.</span>
+        <span>Antioch · Nashville · USA</span>
+      </div>
+    </footer>
+
+    <script src="antioch-eclipse.js"></script>
+  </body>
+</html>
